@@ -19,3 +19,13 @@ export const ADD_MESSAGE_MUTATION = gql`
     }
   }
 `;
+
+export const MESSAGE_ADDED_SUBSCRIPTION = gql`
+  subscription MessageAddedSubscription {
+    message: messageAdded {
+      text
+      id
+      from
+    }
+  }
+`;
